@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\tModLoader.targets" />
+  <PropertyGroup>
+    <AssemblyName>TAT</AssemblyName>
+    <TargetFramework>net6.0</TargetFramework>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Contents\Components\TestComponent.png" />
+    <None Remove="Contents\TestTile.png" />
+    <None Remove="Contents\TestTileItem.png" />
+    <None Remove="TestTileItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="tModLoader.CodeAssist" Version="0.1.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Harmony">
+      <HintPath>..\Harmony\bin\Debug\net6.0\Harmony.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

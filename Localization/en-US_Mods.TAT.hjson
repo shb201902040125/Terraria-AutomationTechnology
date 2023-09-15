@@ -1,0 +1,21 @@
+Items: {
+	TestTileItem: {
+		DisplayName: Test Tile Item
+		Tooltip: ""
+	}
+
+	TestShootComponent: {
+		DisplayName: Test Shoot Component
+		Tooltip: ""
+	}
+
+	ItemWapperComponent: {
+		DisplayName: Item Wapper Component
+		Tooltip: ""
+	}
+
+	TestComponent: {
+		DisplayName: Test Component
+		Tooltip: ""
+	}
+}

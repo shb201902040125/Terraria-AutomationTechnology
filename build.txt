@@ -1,0 +1,4 @@
+displayName = Automation Technology
+author = SilverMoon
+version = 0.1
+dllReferences = Harmony
