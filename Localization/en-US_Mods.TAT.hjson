@@ -19,3 +19,10 @@ Items: {
 		Tooltip: ""
 	}
 }
+
+Buffs: {
+	TestBuff: {
+		DisplayName: Test Buff
+		Description: Mods.TAT.Buffs.TestBuff.Description
+	}
+}

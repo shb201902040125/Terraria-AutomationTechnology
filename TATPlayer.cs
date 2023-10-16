@@ -13,9 +13,10 @@ namespace TAT
 {
     internal class TATPlayer : ModPlayer
     {
+        protected override bool CloneNewInstances => true;
         public override void PostUpdate()
         {
-            if (PlayerInput.Triggers.Old.MouseLeft && !PlayerInput.Triggers.Current.MouseLeft)
+            if (PlayerInput.Triggers.Old.MouseLeft && !PlayerInput.Triggers.Current.MouseLeft && Player.HeldItem.pick == 0)
             {
                 if (WorldGen.InWorld(Player.tileTargetX, Player.tileTargetY))
                 {
@@ -32,7 +33,7 @@ namespace TAT
                         }
                         else
                         {
-                            if(entity.BasicComponent is null)
+                            if (entity.BasicComponent is null)
                             {
                                 return;
                             }

@@ -58,7 +58,7 @@ namespace TAT
         }
         public override void Update()
         {
-            BasicComponent?.Update();
+            UpdateComponent();
         }
         public override void NetSend(BinaryWriter writer)
         {
@@ -148,6 +148,14 @@ namespace TAT
                     c.SpecialDraw(i, j, spriteBatch);
                 }
             }
+        }
+        public void UpdateComponent()
+        {
+            if (BasicComponent is null)
+            {
+                return;
+            }
+
         }
         public override void OnKill()
         {

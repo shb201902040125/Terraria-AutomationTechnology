@@ -22,7 +22,7 @@ namespace TAT.Contents.Components
             Item.maxStack = 9999;
             randomType = Main.rand.Next(4);
         }
-        public override void UpdateMain()
+        public override void Update()
         {
             if (timer > 0)
             {

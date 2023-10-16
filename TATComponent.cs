@@ -83,15 +83,9 @@ namespace TAT
         }
         public virtual bool CanApplyTo(TATComponent component) => true;
         public virtual bool CanAccept(TATComponent component) => true;
-        public void Update()
-        {
-            ForeachNLR(c => c.Reset());
-            ForeachLRN(c => c.UpdateFixEffect());
-            ForeachLRN(c => c.UpdateMain());
-        }
+        public virtual void Update() { }
         public virtual void Reset() { }
         public virtual void UpdateFixEffect() { }
-        public virtual void UpdateMain() { }
         public virtual void DrawEffect(int i, int j, SpriteBatch spriteBatch, ref TileDrawInfo drawData) { }
         public virtual void SpecialDraw(int i, int j, SpriteBatch spriteBatch) { }
         public static void Save(TATComponent root, BinaryWriter writer)
